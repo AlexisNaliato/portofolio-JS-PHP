@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <script src="animation.js" defer></script>
     <script src="index.js" defer></script>
-    <title>Orgris-Portfolio</title>
+    <title>Orgris_Draw</title>
 </head>
 <body>
     <?php include_once('header.php'); ?>
@@ -20,10 +20,10 @@
         <section  class="main_content hidden">
             <div class="main_content-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsam quisquam quidem maxime adipisci illo quos eius saepe soluta dicta distinctio blanditiis voluptates aliquid fugiat, cumque qui id rem dolor.</p>
-                <a class="cta" href="#">CONTACT ME</a>
+                <a class="cta" href="contact.php">CONTACT ME</a>
             </div>
             <div class="main_content-photo">
-                <img src="/images/galaxy.png" alt="Creation original ">
+                <img src="images/galaxy.png" alt="Creation original ">
             </div>
         </section>
         <section class="contact_form hidden">

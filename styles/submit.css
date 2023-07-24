@@ -1,0 +1,42 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: var(--color-primary);
+    font-family: 'Noto Serif Display';
+}
+.submit_content h1 {
+    font-size: 40px;
+}
+h5 {
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+}
+
+.submit_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+b {
+    color:rgb(231, 150, 58); ;
+}
+
+.recap-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+a {
+    text-align: center;
+}
