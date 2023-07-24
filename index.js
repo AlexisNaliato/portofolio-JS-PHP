@@ -27,3 +27,31 @@ function initNavBarChange() {
 }
 
 initNavBarChange()
+
+
+// Animation Form//
+function showForm() {
+    let showFormContent = document.querySelector(".form_content")
+    showFormContent.classList.add("notHide")
+    showFormContent.classList.add("animation")
+}
+
+function showInputs() {
+    let inputsShow = document.querySelectorAll(".form-hide")
+    for(let i = 0; i < inputsShow.length; i++) {
+        inputsShow[i].classList.add('animation_inputs')   
+    }
+}
+
+
+function initShowForm() {
+
+    btnShow = document.querySelector(".showForm button")
+    btnShow.addEventListener("click", () => {
+    
+        showForm()
+        showInputs()
+    })
+}
+
+initShowForm()

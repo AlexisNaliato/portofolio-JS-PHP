@@ -1,0 +1,151 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    cursor: default;
+    --color-primary: #fff;
+    --color-secondary:rgb(231, 150, 58);
+}
+body {
+    background-color: black;
+    color: var(--color-primary);
+    font-family: 'Noto Serif Display';
+}
+
+/*-------FOOTER/HEADER---------*/
+header {
+    background: rgb(150, 127, 113);
+}
+.return_menu img{
+    width: 133px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+footer img {
+    width: 10%;
+}
+
+.logo_reseaux {
+    position: relative;
+    right: 0;
+}
+
+.logo_reseaux img {
+    width: 80px;
+}
+
+/* ----- FORM ----*/
+button {
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Noto Serif Display';
+    background-color: transparent;
+    color: var(--color-primary);
+    transition: ease 0.5s;
+}
+
+button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 23px;
+    padding: 22px;
+    cursor: pointer;
+}
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.form_content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+}
+
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Noto Serif Display';
+}
+input[type=text],input[type=email], textarea::placeholder {
+    background: transparent;
+    color: var(--color-secondary);
+    font-size: 20px;
+}
+input[type=submit] {
+    position: relative;
+    left: 41%;
+    width: 200px;
+    font-size: 15px;
+    padding: 15px;
+    background: transparent;
+    color: var(--color-primary);
+    border-radius: 5px;
+    transition: ease 0.5s;
+}
+input[type=submit]:hover {
+    font-size: 18px;
+    padding: 17px;
+    background-color: var(--color-primary);
+    color: rgb(231, 150, 58);
+    cursor: pointer;
+}
+
+textarea ::placeholder {
+    background-color: transparent;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+
+/*--------ANIMATION FORM--------*/
+.hide {
+    opacity: 0;
+}
+.notHide {
+    opacity: 1;
+}
+
+.animation_inputs {
+    animation-name: fade_in;
+    animation-delay: -0.3s;
+    animation-duration: 1.5s;
+}
+
+.animation {
+    animation-name: Fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade_in {
+    from{filter: blur(5px);transform: translateX(-150%);}
+    to{ filter: blur(0);transform: translateX(0%);}
+}
+
+@keyframes Fade {
+    from{filter: blur(5px);transform: translateY(-40%);}
+    to{ filter: blur(0);transform: translateY(0%);}
+}
